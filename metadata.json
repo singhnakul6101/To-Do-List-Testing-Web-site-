@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow",
+  "description": "A sleek productivity and daily task management app with streak tracking, categorized workflows, and momentum metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

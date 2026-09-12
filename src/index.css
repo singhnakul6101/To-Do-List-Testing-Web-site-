@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #faf9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface-container: #e9edfe;
+  --color-surface-container-high: #e4e8f8;
+  --color-surface-container-highest: #dee2f3;
+  --color-surface-dim: #d5d9ea;
+  --color-surface-bright: #faf9ff;
+
+  --color-primary: #493ee5;
+  --color-primary-container: #635bff;
+  --color-primary-fixed: #e2dfff;
+  --color-primary-fixed-dim: #c3c0ff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fefaff;
+  --color-on-primary-fixed: #0f0069;
+  --color-on-primary-fixed-variant: #321ed2;
+
+  --color-secondary: #006b59;
+  --color-secondary-container: #55fcd8;
+  --color-secondary-fixed: #55fcd8;
+  --color-secondary-fixed-dim: #27dfbc;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #00725f;
+  --color-on-secondary-fixed: #002019;
+  --color-on-secondary-fixed-variant: #005142;
+
+  --color-tertiary: #844f00;
+  --color-tertiary-container: #a4650a;
+  --color-tertiary-fixed: #ffdcbb;
+  --color-tertiary-fixed-dim: #ffb869;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fffaf9;
+  --color-on-tertiary-fixed: #2b1700;
+  --color-on-tertiary-fixed-variant: #673d00;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --color-on-surface: #161b27;
+  --color-on-surface-variant: #464555;
+  --color-outline: #777587;
+  --color-outline-variant: #c7c4d8;
+  --color-inverse-surface: #2b303d;
+  --color-inverse-on-surface: #edf0ff;
+  --color-inverse-primary: #c3c0ff;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .material-symbols-fill {
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

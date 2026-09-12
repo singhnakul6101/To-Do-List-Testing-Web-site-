@@ -1,0 +1,112 @@
+import { Task, CategoryInfo } from '../types';
+
+export const INITIAL_TASKS: Task[] = [
+  {
+    id: 'task-1',
+    title: 'Finalize quarterly product roadmap',
+    category: 'Work',
+    priority: 'High',
+    dueTime: '2:00 PM',
+    dueDate: 'Today',
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'task-2',
+    title: 'Grocery run: almond milk, fresh fruit, coffee beans',
+    category: 'Personal',
+    priority: 'Medium',
+    dueTime: '5:30 PM',
+    dueDate: 'Today',
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'task-3',
+    title: 'Review pull request #142 for checkout flow',
+    category: 'Work',
+    priority: 'High',
+    dueTime: 'Today',
+    dueDate: 'Today',
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'task-4',
+    title: 'Schedule dentist appointment',
+    category: 'Personal',
+    priority: 'Low',
+    dueTime: 'Tomorrow',
+    dueDate: 'Tomorrow',
+    completed: false,
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'task-5',
+    title: 'Morning 20-min stretching & meditation',
+    category: 'Personal',
+    priority: 'Medium',
+    dueTime: '8:00 AM',
+    dueDate: 'Today',
+    completed: true,
+    completedAt: 'Done at 8:15 AM',
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 'task-6',
+    title: 'Send client invoice for April design sprint',
+    category: 'Work',
+    priority: 'High',
+    dueTime: '10:00 AM',
+    dueDate: 'Today',
+    completed: true,
+    completedAt: 'Done at 10:30 AM',
+    createdAt: new Date().toISOString(),
+  },
+];
+
+export const CATEGORIES_LIST: CategoryInfo[] = [
+  {
+    id: 'work',
+    name: 'Work',
+    icon: 'business_center',
+    color: 'bg-primary/10 text-primary',
+    iconColor: 'text-primary',
+    description: 'Projects, client deliverables & career goals',
+  },
+  {
+    id: 'personal',
+    name: 'Personal',
+    icon: 'person',
+    color: 'bg-secondary/10 text-secondary',
+    iconColor: 'text-secondary',
+    description: 'Errands, life admin, routines & self-care',
+  },
+  {
+    id: 'urgent',
+    name: 'Urgent',
+    icon: 'priority_high',
+    color: 'bg-error/10 text-error',
+    iconColor: 'text-error',
+    description: 'Time-sensitive items requiring immediate action',
+  },
+  {
+    id: 'health',
+    name: 'Health',
+    icon: 'favorite',
+    color: 'bg-rose-500/10 text-rose-600',
+    iconColor: 'text-rose-600',
+    description: 'Workouts, nutrition, mindfulness & checkups',
+  },
+  {
+    id: 'study',
+    name: 'Study',
+    icon: 'menu_book',
+    color: 'bg-amber-500/10 text-amber-600',
+    iconColor: 'text-amber-600',
+    description: 'Books, courses, research & skill development',
+  },
+];
+
+export const TASKFLOW_LOGO_URL =
+  'https://lh3.googleusercontent.com/aida/AEtjO1W39FuJyqiyVp-3zGcFjipD3VLFfIt4txRukzPW2yWmxAl4Y6d55WN5_Ltr9bbLHAI3v9p_GWzpfeK6q6CSh7owzwniRGM_i35xGHGwBvdQL9OqSiA5mlTepM1qyW15-Lr7zFoQAUzg0AJxraE0BF6cD-r0aBPeO6FgJTqswNp8GOz3LG1zp-r8cA_Ll-m8GIIfswFejI_lJGPr3TBRaGESx3LlqxDlC4y73W93A5Mr9sxm_IN7oLcaK5yX';
